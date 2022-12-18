@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Noteworthy';
+    src: url(fonts/Noteworthy-Bold.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Marker Felt";
+    src: url("fonts/Marker\ Felt\ Font.ttf") format("TrueType");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Once in a while';
+    src: url('fonts/once-in-a-while.eot');
+    src: url('fonts/once-in-a-while.eot?#iefix') format('embedded-opentype'),
+         url('fonts/once-in-a-while.woff') format('woff'),
+         url('fonts/once-in-a-while.ttf') format('truetype'),
+         url('fonts/once-in-a-while.svg#Once in a while') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
