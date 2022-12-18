@@ -42,6 +42,7 @@ body {
     background: url("./img/bg_repeat.jpg");
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
+    overflow-x: hidden;
 }
 
 .container {
