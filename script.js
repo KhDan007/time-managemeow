@@ -67,3 +67,12 @@ list.addEventListener('click', function (ev) {
 		ev.target.classList.toggle('checked');
 	}
 }, false);
+
+// =============================================================
+
+const langBtn = document.querySelector('.lang__button');
+const langList = document.querySelector(".lang__list");
+
+langBtn.addEventListener('click', () => {
+	langList.classList.toggle("active");
+});
