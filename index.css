@@ -79,10 +79,11 @@ body {
 }
 
 .header__logo {
-    width: 160px;
-    height: 160px;
-    background-color: #f5e0df;
-    border-radius: 50%;
+    width: 200px;
+}
+.header__logo img {
+    width: 100%;
+    height: 100%;
 }
 
 /* ======================================================== */
@@ -250,12 +251,8 @@ ol {
     font-size: 22px;
 }
 .intro__image {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 700px;
     margin: 30px auto 30px;
-    height: 172px;
-    background-color: #fff;
-    border: 1px solid #000;
 }
 .options__title {
     margin-top: 30px;
@@ -308,9 +305,6 @@ ol {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    height: 172px;
-    background-color: #fff;
-    border: 1px solid #000;
 }
 
 /* ===================================================================================== */
