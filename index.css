@@ -44,6 +44,7 @@ body {
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .content {
@@ -195,6 +196,7 @@ ol {
     background-color: #E77D91;
     padding-bottom: 15px;
     text-align: center;
+    font-size: 22px;
 }
 
 .footer .container {
@@ -212,7 +214,6 @@ ol {
 .footer__elem {
     flex: 1 1 50%;
     color: #fff;
-    font-size: 22px;
     margin-right: 40px;
 }
 
@@ -222,7 +223,6 @@ ol {
 
 .footer__data {
     color: #fff;
-    font-size: 22px;
     text-align: center;
     width: 100%;
 }
@@ -249,4 +249,164 @@ ol {
 
 .references {
     font-size: 25px;
+}
+
+/* ======================================================== */
+
+@media (max-width: 1512px) {
+    .content {
+        max-width: 1100px;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+    .header__title {
+        font-size: 80px;
+    }
+    .header__row {
+        height: 150px;
+    }
+    .header__logo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .content {
+        max-width: 900px;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .header__title {
+        font-size: 50px;
+    }
+    .header__row {
+        height: 120px;
+    }
+    .header__logo {
+        width: 80px;
+        height: 80px;
+    }
+    .header .container {
+        max-width: 900px;
+    }
+    .intro {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 832px) {
+    .content {
+        max-width: 700px;
+    }
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 770px) {
+    .header__title {
+        font-size: 35px;
+    }
+    .header__row {
+        height: 70px;
+    }
+    .header__logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+    .subtitle {
+        font-size: 25px;
+    }
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 570px) {
+    .header__title {
+        text-align: right;
+        font-size: 30px;
+    }
+
+    .footer__elem {
+        margin-right: 15px;
+    }
+    .footer .container {
+        height: 150px;
+    }
+    .footer {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 475px) {
+    .header__title {
+        font-size: 25px;
+    }
+    .header__logo {
+        width: 40px;
+        height: 40px;
+    }
+    .header__row {
+        height: 50px;
+    }
+    .intro {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .intro__text {
+        margin-top: 5px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .subtitle {
+        font-size: 21px;
+    }
+    .text {
+        font-size: 17px;
+    }
+    .options__list li {
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .steps__list li {
+        margin-bottom: 10px;
+    }
+    .tips {
+        padding-bottom: 15px;
+    }
+    .tips__title {
+        margin-bottom: 5px;
+    }
+    .conlusion__title {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 390px) {
+    .header__title {
+        font-size: 20px;
+    }
+    .header__logo {
+        width: 35px;
+        height: 35px;
+    }
+    .footer__elem {
+        margin-right: 5px;
+    }
+    .footer .container {
+        padding: 0 5px;
+    }
 }
