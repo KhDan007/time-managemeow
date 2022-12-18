@@ -37,8 +37,10 @@ img {
 /* ============================================================ */
 
 body {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     font-family: "Noteworthy";
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
 }
 
 .container {
@@ -50,11 +52,11 @@ body {
 .content {
     max-width: 1420px;
     margin: 0 auto;
-    background-color: #F5E0DF;
+    background-color: #f5e0df;
 }
 
 .header {
-    background-color: #E77D91;
+    background-color: #e77d91;
 }
 
 .header .container {
@@ -64,7 +66,7 @@ body {
 .header__title {
     font-size: 100px;
     font-family: "Once in a while";
-    color: #FDF9F9;
+    color: #fdf9f9;
     flex: 1;
     text-align: center;
 }
@@ -79,7 +81,7 @@ body {
 .header__logo {
     width: 160px;
     height: 160px;
-    background-color: #F5E0DF;
+    background-color: #f5e0df;
     border-radius: 50%;
 }
 
@@ -91,7 +93,7 @@ ul li {
 }
 
 ul li::before {
-    content: '♡';
+    content: "♡";
     position: absolute;
     top: 0;
     left: 0;
@@ -103,6 +105,127 @@ ol {
 
 /* ======================================================== */
 
+.tool {
+    padding: 40px 0 0px;
+}
+
+.tool__title {
+    margin-bottom: 20px;
+}
+
+/* Style the list items */
+.tool__list li {
+    cursor: pointer;
+    position: relative;
+    padding-left: 0;
+    padding: 25px;
+    padding-left: 50px;
+    background: #eee;
+    font-size: 25px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tool__list li::before {
+    content: '';
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+.tool__list li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+.tool__list li:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+.tool__list li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+.tool__list li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 30px;
+    left: 20px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Style the header */
+.tool__tool {
+    padding: 30px 40px;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* Clear floats after the header */
+.tool__tool:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+.tool__input {
+    width: 80%;
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    padding: 10px;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    flex-grow: 1;
+    /* border: 1px solid #000; */
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+/* =============================================================================== */
+
 .intro {
     padding: 70px 0px 40px;
 }
@@ -113,17 +236,17 @@ ol {
 
 .title {
     font-size: 50px;
-    color: #1C1839;
+    color: #1c1839;
     line-height: 60.51px;
     font-family: "Marker Felt";
 }
 
 .subtitle {
     font-size: 30px;
-    color: #1C1839;
+    color: #1c1839;
 }
 .text {
-    color: #1C1839;
+    color: #1c1839;
     font-size: 22px;
 }
 .intro__image {
@@ -193,7 +316,7 @@ ol {
 /* ===================================================================================== */
 
 .footer {
-    background-color: #E77D91;
+    background-color: #e77d91;
     padding-bottom: 15px;
     text-align: center;
     font-size: 22px;
