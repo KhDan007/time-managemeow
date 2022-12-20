@@ -39,7 +39,8 @@ img {
 body {
     background-color: #f5f5f5;
     font-family: "Noteworthy";
-    background: url("./img/bg_repeat.jpg");
+    background: url("./img/bg_repeat.jpeg") 0 0;
+    background-size: 400px;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     overflow-x: hidden;
